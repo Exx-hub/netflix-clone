@@ -1,0 +1,44 @@
+.movieRow {
+	margin-left: 20px;
+}
+.movieRow > h1 {
+	color: white;
+	font-size: 24px;
+}
+.movieRow__posters {
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 20px;
+}
+.movieRow__posters::-webkit-scrollbar {
+	display: none;
+}
+
+.movieRow__posterNetflix {
+	object-fit: contain;
+	max-height: 250px;
+	width: 100%;
+
+	transition: transform 450ms;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.movieRow__posterNetflix:hover {
+	transform: scale(1.09);
+}
+
+.movieRow__posterBackdrop {
+	object-fit: contain;
+	max-height: 100px;
+	width: 100%;
+
+	transition: transform 450ms;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.movieRow__posterBackdrop:hover {
+	transform: scale(1.08);
+}
